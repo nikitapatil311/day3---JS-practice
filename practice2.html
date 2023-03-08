@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    /*Splicing is used to add elements to an array<br>
+    */
+    <p id="demo"></p>
+
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <script>
+        const birds = ["sparrow", "peacock", "parrot"];
+        document.getElementById("demo").innerHTML = birds;
+
+        birds.splice(1, 0, "kiwi", "nightangle"); // the numbers 1 defines elements should be added at 1st index<br> 0 elements to remove 0 elements.
+        document.getElementById("demo1").innerHTML = birds;
+        birds.splice(0,1);// remove 1 element from 0 position.
+        document.getElementById("demo2").innerHTML = birds;
+
+    </script>
+</body>
+</html>

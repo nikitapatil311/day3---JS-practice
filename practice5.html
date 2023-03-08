@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    /*sorting numbers - while sorting numbers sort() will consider 20 > 100 because 2 > 1 so in order to overcome this <br>
+    function(a,b), return(a-b)*/
+    <p id="demo"></p>
+    <p id="demo1"></p>
+
+    <script>
+        const num = [60,40];
+        document.getElementById("demo").innerHTML= num;
+        num.sort(function(a,b) {return (a-b)});
+
+        document.getElementById("demo1").innerHTML = num;
+
+
+
+    </script>
+</body>
+</html>
